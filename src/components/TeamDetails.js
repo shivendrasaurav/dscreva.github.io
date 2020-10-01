@@ -9,7 +9,7 @@ export default class TeamDetails extends Component {
         return (
             <div className="details">
                 <div className="h-100 valign-wrapper" onClick={()=>this.props.handlePrev()}>
-                    <img src={prev} alt="Previous Member"/>
+                    <img class="hovermousepointer" src={prev} alt="Previous Member"/>
                 </div>
                 
                 <div className="details_container">
@@ -26,7 +26,7 @@ export default class TeamDetails extends Component {
                 </div>
                 
                 <div className="h-100 valign-wrapper" onClick={()=>this.props.handleNext()}>
-                    <div><img src={next} alt="Next Member"/></div>
+                    <img class="hovermousepointer" src={next} alt="Next Member"/>
                 </div>
             </div>
         )

@@ -93,3 +93,7 @@
 
     color: #666C73;
 }
+
+.hovermousepointer:hover {
+    cursor: pointer;
+}
