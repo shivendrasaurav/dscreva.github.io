@@ -45,7 +45,7 @@ class FourZeroFour extends Component{
           DSC REVA
         </div>
         <div className="row">
-          <div className="col m3 l3"><TeamLeft members={members} setTeamMembers={this.setTeamMembers} setCurrMember={this.setCurrMember}/></div>
+          <div className="col m3 l3 hide-on-small-only"><TeamLeft members={members} setTeamMembers={this.setTeamMembers} setCurrMember={this.setCurrMember}/></div>
           <div className="col m9 l9"><TeamDetails member={this.state.team_members[this.state.curr_member]} handlePrev={this.handlePrev} handleNext={this.handleNext}/></div>
         </div>
       </>

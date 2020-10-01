@@ -8,8 +8,8 @@ export default class TeamDetails extends Component {
     render() {
         return (
             <div className="details">
-                <div className="prev_button_container">
-                    <img src={prev} alt="Previous Member" onClick={()=>this.props.handlePrev()}/>
+                <div className="h-100 valign-wrapper" onClick={()=>this.props.handlePrev()}>
+                    <img src={prev} alt="Previous Member"/>
                 </div>
                 
                 <div className="details_container">
@@ -22,11 +22,11 @@ export default class TeamDetails extends Component {
                         </div>
                     </div>
                     <div className="member_tags">{this.props.member.tags.join(' | ')}</div>
-                    <div className="member_description">{this.props.member.description}</div>
+                    <div className="member_description flow-text">{this.props.member.description}</div>
                 </div>
                 
-                <div className="next_button_container">
-                    <img src={next} alt="Next Member" onClick={()=>this.props.handleNext()}/>
+                <div className="h-100 valign-wrapper" onClick={()=>this.props.handleNext()}>
+                    <div><img src={next} alt="Next Member"/></div>
                 </div>
             </div>
         )
