@@ -1,38 +1,54 @@
 import React, {Component} from "react"
+import Logo from './static/logo.svg';
+import './styles/TeamComp.css';
+import TeamLeft from './TeamLeft';
+import TeamDetails from './TeamDetails';
+import members from '../teamMembers';
+
 
 class FourZeroFour extends Component{
-
-  frosting(){
-
-    document.querySelector(".frost_container:hover").onmousemove = e => {
-        const x = e.pageX - e.target.offsetLeft;
-        const y = e.pageY - e.target.offsetTop;
-    
-        e.target.style.setProperty("--x", `${x}px`);
-        e.target.style.setProperty("--y", `${y}px`);
-    };
+  constructor(props) {
+    super(props);
+    this.state = {
+      team_members: members, //team members array which is initially set to all members
+      curr_member:0 //member index in a certain team
+    }
+    this.setTeamMembers= this.setTeamMembers.bind(this);
+    this.setCurrMember= this.setCurrMember.bind(this);
   }
 
-  openhome(){
-    window.open("https://fluentdesignforweb.github.io/", "_self", "replace");
+  setTeamMembers(_team_members) {
+    this.setState({team_members: _team_members});
   }
 
-  
+  setCurrMember(_curr_member) {
+    this.setState({curr_member: _curr_member});
+  }
+
+  handleNext = () => {
+    if(this.state.curr_member<this.state.team_members.length-1){
+      this.setState({curr_member: this.state.curr_member+1})
+    }
+  }
+
+  handlePrev = () =>{
+    if(this.state.curr_member>0){
+      this.setState({curr_member: this.state.curr_member-1})
+    }
+  }
+
   render(){
     return(
-      <div className="container">
-        <div className="col l8 m8 s12">
-          <h1 style={{fontSize: "20vh"}}><span>404</span></h1>
-          <p>
-            <h2>We Couldn't Connect The Dots</h2>
-            The page you want to access doesn't exist or you assembled the link incorrectly
-          </p><br />
-          <button className="btn-large frost_container red lighten-4" onMouseOver={this.frosting} onClick={this.openhome}>
-            <span className="frost">Head To Home</span>
-          </button>
-          <br /><br />
+      <>
+        <div className="header">
+          <img src={Logo} className="logo" alt="" srcset=""/>
+          DSC REVA
         </div>
-      </div>
+        <div className="row">
+          <div className="col m3 l3 hide-on-small-only"><TeamLeft members={members} setTeamMembers={this.setTeamMembers} setCurrMember={this.setCurrMember}/></div>
+          <div className="col m9 l9"><TeamDetails member={this.state.team_members[this.state.curr_member]} handlePrev={this.handlePrev} handleNext={this.handleNext}/></div>
+        </div>
+      </>
     );
   }
 
