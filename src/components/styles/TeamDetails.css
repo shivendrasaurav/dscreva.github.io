@@ -79,7 +79,7 @@
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .member_tags {
-        font-size: 29px;
+        font-size: 4vh;
     }
 }
 
