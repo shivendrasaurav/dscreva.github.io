@@ -14,7 +14,7 @@ export default class TeamDetails extends Component {
                 
                 <div className="details_container">
                     <div className="details_container_top">
-                        <img className="member_image" src={this.props.member.image_url} alt="" srcset=""/>
+                    <img className="member_image" src={require(`${this.props.member.image_url}`)} alt="" srcset=""/>
                         <div className="details_row">
                             <div className="member_name">{this.props.member.name}</div>
                             <div className="member_title">{this.props.member.title}</div>
