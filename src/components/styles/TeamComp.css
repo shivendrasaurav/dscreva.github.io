@@ -7,14 +7,50 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 22px;
-
     /* Google Grey */
     color: #666C73;
 }
-
 
 .logo {
     width: 49px;
     height: 23.76px;
     margin-right: 10px;
+}
+
+.member-image-slider {
+    height: 150px;
+    width: 100%;    
+    object-fit: cover;
+}
+
+.swiper-container 
+{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+
+}
+
+.sidenav-trigger{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+/* Hide slider on mobile devices */
+@media only screen and (max-width: 600px) {
+    .bottom_slider {
+        display: none;
+    }
+    /* Show sidenav trigger */
+    .sidenav-trigger {
+        display: block;
+    }
 }
