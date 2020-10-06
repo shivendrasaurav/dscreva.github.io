@@ -6,7 +6,7 @@ import TeamDetails from './TeamDetails';
 import members from '../teamMembers';
 
 
-class FourZeroFour extends Component{
+class Team extends Component{
   constructor(props) {
     super(props);
     this.state = {
@@ -55,4 +55,4 @@ class FourZeroFour extends Component{
 }
 
 
-export default FourZeroFour;
+export default Team;
