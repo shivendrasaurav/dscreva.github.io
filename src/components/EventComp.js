@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import { NavLink } from "react-router-dom";
-class Home extends Component{
+class Events extends Component{
 
   frosting(){
 
@@ -22,7 +22,7 @@ class Home extends Component{
     return(
       <div className="container">
         <div className="col l8 m8 s12">
-          <h1 style={{fontSize: "20vh"}}><span>Home Page</span></h1><br />
+          <h1 style={{fontSize: "20vh"}}><span>Events Page</span></h1><br />
           <button className="btn-large frost_container red lighten-1" onMouseOver={this.frosting} onClick={this.close}>
             <span className="frost">Back</span>
           </button>
@@ -42,4 +42,4 @@ class Home extends Component{
 }
 
 
-export default Home;
+export default Events;

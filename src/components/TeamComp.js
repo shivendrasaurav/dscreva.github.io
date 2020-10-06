@@ -16,7 +16,7 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 //Style file
 import './styles/TeamComp.css';
 
-class FourZeroFour extends Component{
+class Team extends Component{
   constructor(props) {
     super(props);
     this.state = {
@@ -121,4 +121,4 @@ class FourZeroFour extends Component{
 }
 
 
-export default FourZeroFour;
+export default Team;
