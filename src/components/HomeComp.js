@@ -26,10 +26,16 @@ class Home extends Component{
           <button className="btn-large frost_container red lighten-1" onMouseOver={this.frosting} onClick={this.close}>
             <span className="frost">Back</span>
           </button>
-          <br />
+          <br /><br />
           <NavLink to="/fedw">
             <button className="btn-large frost_container green lighten-1">
               <span className="frost">Front End Development Workshop 2019</span>
+            </button>
+          </NavLink>
+          <br /><br />
+          <NavLink to="/team">
+            <button className="btn-large frost_container green lighten-1">
+              <span className="frost">The Team</span>
             </button>
           </NavLink>
           
