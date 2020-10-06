@@ -1,0 +1,22 @@
+.right{
+    float: right;
+}
+.ta_center{
+    text-align: center;
+}
+.resp{
+    width: 100%;
+}
+
+.ssbg{
+    height: 100vh;
+    padding-top: 0.5vh;
+    background-image: linear-gradient(135deg, transparent 0%, transparent 6%,rgba(236,236,252, 0.6) 6%, rgba(236,236,252, 0.6) 22%,transparent 22%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 20%,rgba(236,236,252, 0.6) 20%, rgba(236,236,252, 0.6) 47%,transparent 47%, transparent 100%),linear-gradient(135deg, transparent 0%, transparent 24%,rgba(236,236,252, 0.6) 24%, rgba(236,236,252, 0.6) 62%,transparent 62%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 73%,rgba(236,236,252, 0.6) 73%, rgba(236,236,252, 0.6) 75%,transparent 75%, transparent 100%),linear-gradient(90deg, rgb(252,252,252),rgb(252,252,252));
+}
+.each-slide{
+
+    p{
+        font-size: 22px;
+        font-weight: 500;
+    }
+}

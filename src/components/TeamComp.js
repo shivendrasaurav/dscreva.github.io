@@ -109,7 +109,7 @@ class Team extends Component{
           <div class="swiper-container">
             <div class="swiper-wrapper">
               {members.map(function (member, index) {
-                  return <div class="swiper-slide"><img class="member-image-slider" src={require(`${member.image_url}`)} key={index}/></div>
+                  return <div class="swiper-slide"><img class="member-image-slider" alt="Team Members" src={require(`${member.image_url}`)} key={index}/></div>
                 })}
             </div>
           </div>

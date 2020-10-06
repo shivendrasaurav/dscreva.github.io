@@ -1,36 +1,90 @@
 import React, {Component} from "react"
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+import "./rewind.css";
 
-class fedw extends Component{
+import slide1 from "./fedw19/slide1.JPG";
+import slide2 from "./fedw19/slide2.JPG";
+import slide3 from "./fedw19/slide3.JPG";
+import slide4 from "./fedw19/slide4.JPG";
+import slide5 from "./fedw19/slide5.JPG";
+import slide6 from "./fedw19/slide6.JPG";
+import slide7 from "./fedw19/slide7.JPG";
+import slide8 from "./fedw19/slide8.JPG";
 
-  frosting(){
+const close = () =>{
+  window.history.go(-1)
+}
 
-    document.querySelector(".frost_container:hover").onmousemove = e => {
-        const x = e.pageX - e.target.offsetLeft;
-        const y = e.pageY - e.target.offsetTop;
-    
-        e.target.style.setProperty("--x", `${x}px`);
-        e.target.style.setProperty("--y", `${y}px`);
-    };
-  }
+const fedw = () =>{
 
-  close(){
-    window.history.go(-1)
-  }
-
-  
-  render(){
     return(
-      <div className="container">
-        <div className="col l8 m8 s12">
-          <h1 style={{fontSize: "20vh"}}><span>Rewind&lt;&lt;</span></h1><br />
-          <button className="btn-large frost_container red lighten-4" onMouseOver={this.frosting} onClick={this.close}>
-            <span className="frost">Head To Home</span>
-          </button>
-          <br /><br />
+      <div className="ssbg">
+        <div className="container">
+          <div className="col l10 m8 s12">
+            <button className="btn-floating btn-large waves-effect waves-light red right" onClick={close}>
+              <i class="material-icons">close</i>
+            </button>
+            <h1 style={{fontSize: "5vh"}}><span>Front End Development Workshop 2019</span></h1><br />
+            <br />
+            
+            <div className="slide-container">
+              <Slide>
+              <div className="each-slide">
+                  <div>
+                    <img src={slide1} className="resp" />
+                    <p className="ta_center">Dr. Manvi introducing everyone to Front End Development and it's importance</p>
+                  </div>
+                </div>
+                <div className="each-slide">
+                  <div>
+                    <img src={slide2} className="resp" />
+                    <p className="ta_center">Saket instructing how to use GitHub CLI</p>
+                  </div>
+                </div>
+                <div className="each-slide">
+                  <div>
+                    <img src={slide3} className="resp" />
+                    <p className="ta_center">Participants installing required software(s)</p>
+                  </div>
+                </div>
+                <div className="each-slide">
+                  <div>
+                    <img src={slide4} className="resp" />
+                    <p className="ta_center">Sahil and Dharshan helping participants</p>
+                  </div>
+                </div>
+                <div className="each-slide">
+                  <div>
+                    <img src={slide5} className="resp" />
+                    <p className="ta_center">Participants developing a JavaScript based Calculator</p>
+                  </div>
+                </div>
+                <div className="each-slide">
+                  <div>
+                    <img src={slide6} className="resp" />
+                    <p className="ta_center">Shivendra taking a hands on HTML + CSS session</p>
+                  </div>
+                </div>
+                <div className="each-slide">
+                  <div>
+                    <img src={slide7} className="resp" />
+                    <p className="ta_center">Participants concentrating</p>
+                  </div>
+                </div>
+                <div className="each-slide">
+                  <div>
+                    <img src={slide8} className="resp" />
+                    <p className="ta_center">Anjan giving a thumbs up</p>
+                  </div>
+                </div>
+              </Slide>
+            </div>
+
+          </div>
         </div>
       </div>
     );
-  }
 
 }
 

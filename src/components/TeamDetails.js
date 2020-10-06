@@ -20,7 +20,7 @@ export default class TeamDetails extends Component {
                             <div className="member_title">{this.props.member.title}</div>
                             <div className="member_socials">
                                 {this.props.member.socials?.map((social, index)=>(
-                                    <a href={social.link}><img className="social_image" src={require(`./static/socials/${social.site}.png`)} key={index}/></a>)
+                                    <a href={social.link}><img className="social_image" alt="Team Members" src={require(`./static/socials/${social.site}.png`)} key={index}/></a>)
                                 )}
                             </div>
                         </div>
