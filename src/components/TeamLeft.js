@@ -16,7 +16,7 @@ export default class TeamLeft extends Component {
         e.target.classList.add("active");
         let filtered_members = [];
         this.setState({curr_team: _team});
-        if(_team!="All")
+        if(_team!=="All")
             filtered_members = this.props.members.filter(member => member.team===_team); //filter the members array
         else
             filtered_members = this.props.members;
