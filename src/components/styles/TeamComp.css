@@ -1,0 +1,20 @@
+.header {
+    padding-top: 3%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 22px;
+
+    /* Google Grey */
+    color: #666C73;
+}
+
+
+.logo {
+    width: 49px;
+    height: 23.76px;
+    margin-right: 10px;
+}

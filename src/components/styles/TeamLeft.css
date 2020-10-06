@@ -1,0 +1,106 @@
+.leftcol {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30%;
+    padding-top: 70px;
+}
+
+.leftcol_text_big {
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 51px;
+    margin-bottom: 20px;
+    /* Google Grey */
+    color: #666C73;
+}
+
+.leftcol_text {
+    font-size: 30px;
+    font-style: normal;
+    line-height: 51px;
+    font-weight: normal;
+    /* Google Grey */
+    color: #666C73;
+}
+
+.all_text:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.management_text:hover {
+    color: #FBBC04;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.management_text.active {
+    color: #FBBC04;
+    font-weight: 500;
+}
+
+.design_text:hover {
+    color: #049C59;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.design_text.active {
+    color: #049C59;
+    font-weight: 500;
+}
+
+.tech_text:hover{
+    color: #EA4335;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tech_text.active{
+    color: #EA4335;
+    font-weight: 500;
+}
+
+.web_text:hover {
+    color: #4285F4;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.web_text.active{
+    color: #4285F4;
+    font-weight: 500;
+}
+
+.android_text:hover {
+    color: #0F9D58;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.android_text.active {
+    color: #0F9D58;
+    font-weight: 500;
+}
+
+.mentors_text:hover {
+    color: #FBBC04;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mentors_text.active {
+    color: #FBBC04;
+    font-weight: 500;
+}
+
+.faculty_text:hover {
+    color: #EA4335;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.faculty_text.active {
+    color: #EA4335;
+    font-weight: 500;
+}
