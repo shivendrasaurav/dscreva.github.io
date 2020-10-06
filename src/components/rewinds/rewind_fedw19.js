@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React from "react"
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import "./rewind.css";
@@ -32,49 +32,49 @@ const fedw = () =>{
               <Slide>
               <div className="each-slide">
                   <div>
-                    <img src={slide1} className="resp" />
+                    <img src={slide1} className="resp" alt="slide1" />
                     <p className="ta_center">Dr. Manvi introducing everyone to Front End Development and it's importance</p>
                   </div>
                 </div>
                 <div className="each-slide">
                   <div>
-                    <img src={slide2} className="resp" />
+                    <img src={slide2} className="resp" alt="slide2" />
                     <p className="ta_center">Saket instructing how to use GitHub CLI</p>
                   </div>
                 </div>
                 <div className="each-slide">
                   <div>
-                    <img src={slide3} className="resp" />
+                    <img src={slide3} className="resp" alt="slide3" />
                     <p className="ta_center">Participants installing required software(s)</p>
                   </div>
                 </div>
                 <div className="each-slide">
                   <div>
-                    <img src={slide4} className="resp" />
+                    <img src={slide4} className="resp" alt="slide4" />
                     <p className="ta_center">Sahil and Dharshan helping participants</p>
                   </div>
                 </div>
                 <div className="each-slide">
                   <div>
-                    <img src={slide5} className="resp" />
+                    <img src={slide5} className="resp" alt="slide5" />
                     <p className="ta_center">Participants developing a JavaScript based Calculator</p>
                   </div>
                 </div>
                 <div className="each-slide">
                   <div>
-                    <img src={slide6} className="resp" />
+                    <img src={slide6} className="resp" alt="slide6" />
                     <p className="ta_center">Shivendra taking a hands on HTML + CSS session</p>
                   </div>
                 </div>
                 <div className="each-slide">
                   <div>
-                    <img src={slide7} className="resp" />
+                    <img src={slide7} className="resp" alt="slide7" />
                     <p className="ta_center">Participants concentrating</p>
                   </div>
                 </div>
                 <div className="each-slide">
                   <div>
-                    <img src={slide8} className="resp" />
+                    <img src={slide8} className="resp" alt="slide8" />
                     <p className="ta_center">Anjan giving a thumbs up</p>
                   </div>
                 </div>
