@@ -9,16 +9,20 @@ export default class TeamDetails extends Component {
         return (
             <div className="details">
                 <div className="h-100 valign-wrapper" onClick={()=>this.props.handlePrev()}>
-                    <img class="hovermousepointer" src={prev} alt="Previous Member"/>
+                    <img className="hovermousepointer" src={prev} alt="Previous Member"/>
                 </div>
                 
                 <div className="details_container">
                     <div className="details_container_top">
-                    <img className="member_image" src={require(`${this.props.member.image_url}`)} alt="" srcset=""/>
+                    <img className="member_image" src={require(`${this.props.member.image_url}`)} alt={this.props.member.name}/>
                         <div className="details_row">
                             <div className="member_name">{this.props.member.name}</div>
                             <div className="member_title">{this.props.member.title}</div>
-                            <div className="member_socials"></div>
+                            <div className="member_socials">
+                                {this.props.member.socials?.map((social, index)=>(
+                                    <a href={social.link}><img className="social_image" src={require(`./static/socials/${social.site}.png`)} key={index}/></a>)
+                                )}
+                            </div>
                         </div>
                     </div>
                     <div className="member_tags">{this.props.member.tags.join(' | ')}</div>
@@ -26,7 +30,7 @@ export default class TeamDetails extends Component {
                 </div>
                 
                 <div className="h-100 valign-wrapper" onClick={()=>this.props.handleNext()}>
-                    <img class="hovermousepointer" src={next} alt="Next Member"/>
+                    <img className="hovermousepointer" src={next} alt="Next Member"/>
                 </div>
             </div>
         )

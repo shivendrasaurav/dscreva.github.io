@@ -2,10 +2,10 @@ import React, {Component} from "react"
 import Logo from './static/logo.svg';
 import TeamLeft from './TeamLeft';
 import TeamDetails from './TeamDetails';
+import TeamSidenav from './TeamSidenav';
 import members from '../teamMembers';
 // import Swiper core and required components
 import Swiper from 'swiper';
-// import { Swiper, SwiperSlide } from 'swiper/react';
 import swiper from 'swiper/bundle';
 // Import Swiper styles
 import 'swiper/swiper.scss';
@@ -48,6 +48,7 @@ class FourZeroFour extends Component{
   }
 
   componentDidMount () {
+    // For bottom image slider
     var swiper = new Swiper('.swiper-container', {
           effect: 'coverflow',
           grabCursor: true,
@@ -93,10 +94,12 @@ class FourZeroFour extends Component{
 
   render(){
     return(
-      <>
+      <div>
+        <TeamSidenav members={members} setTeamMembers={this.setTeamMembers} setCurrMember={this.setCurrMember}/>
         <div className="header">
-          <img src={Logo} className="logo" alt="" srcset=""/>
+          <img src={Logo} className="logo" alt=""/>
           DSC REVA
+          <a href="#/team" data-target="slide-out" className="sidenav-trigger "><i className="material-icons">menu</i></a>
         </div>
         <div className="row">
           <div className="col m3 l3 hide-on-small-only"><TeamLeft members={members} setTeamMembers={this.setTeamMembers} setCurrMember={this.setCurrMember}/></div>
@@ -111,7 +114,7 @@ class FourZeroFour extends Component{
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 

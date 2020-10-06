@@ -48,7 +48,14 @@
 
 .member_socials {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top:5px;
+}
+
+.social_image {
+    width:35px;
+    height:35px;
+    margin-right: 5px;
 }
 
 .member_name {
@@ -74,12 +81,18 @@
     line-height: 35px;
     color: #000000;
     margin: 20px 0px 20px 0px;
+    text-transform: capitalize;
 }
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .member_tags {
         font-size: 4vh;
+    }
+
+    .member_socials{
+        align-items:center;
+        justify-content: center;
     }
 }
 
